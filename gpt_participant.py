@@ -9,7 +9,7 @@ import json
 import subprocess
 
 class GptParticipant(ChatParticipantInterface):
-    def __init__(self, label, api_key, model="gpt-4o", base_file_folder=Path("gpt_managed_files/")):
+    def __init__(self, label, api_key, model="gpt-4o-mini", base_file_folder=Path("gpt_managed_files/")):
         super(GptParticipant, self).__init__(label)
 
         # Ensure the base file folder exists
